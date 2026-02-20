@@ -1,22 +1,20 @@
-# Outils de build (Pour éviter les erreurs de métadonnées)
-pip==24.0
-setuptools==69.0.0
-wheel==0.42.0
+# CORE (Versions testées sur Python 3.12.7 - Render 2026)
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+python-dateutil==2.9.0.post0
 
-# Framework API
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
+# BOT DISCORD/TELEGRAM
+discord.py==2.4.0
+aiohttp==3.10.5
 
-# Base de données & Auth
-supabase==2.3.0
-psycopg2-binary==2.9.9
-python-dotenv==1.0.0
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-
-# Data & ML (Versions compatibles)
+# SUPABASE & API
+supabase==2.5.0
 requests==2.31.0
-numpy==1.26.3
-pandas==2.1.4
-scikit-learn==1.3.2
-xgboost==2.0.3
+python-dotenv==1.0.1
+
+# FIX CRITIQUES (Évite les erreurs de compilation)
+pytz==2024.1
+tzdata==2024.1
+wheel==0.42.0
+setuptools==69.5.1
